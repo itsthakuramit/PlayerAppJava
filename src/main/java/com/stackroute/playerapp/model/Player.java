@@ -2,10 +2,17 @@ package com.stackroute.playerapp.model;
 
 public class Player {
 
+	
 	private String playerid;
 	private String playername;
 	private String sports;
 
+	
+	public Player() {
+		super();		
+	}
+	
+	
 	public Player(String playerid, String playername, String sports) {
 		super();
 		this.playerid = playerid;

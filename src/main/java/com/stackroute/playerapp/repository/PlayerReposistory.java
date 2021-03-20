@@ -17,11 +17,27 @@ public class PlayerReposistory {
 	}
 
 	public List<Player> deletePlayer(Player player) {
-		return null;
+		
+		for(Player p: playerlist){
+			if(player.getPlayerid().equals(p.getPlayerid())) {	
+					playerlist.remove(p);
+					break;
+			}
+		}
+		return playerlist;
 	}
 
 	public List<Player> updatePlayer(Player player) {
-		return null;
+		
+		for(Player p: playerlist){
+			if(player.getPlayerid().equals(p.getPlayerid()))	{
+					String str= "Harsh";
+					p.setPlayername(str);
+					break;
+				}
+		}
+		return playerlist;
+		
 	}
 	
 }
